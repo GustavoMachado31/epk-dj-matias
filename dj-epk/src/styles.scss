@@ -1,0 +1,42 @@
+/* src/styles.scss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'FonteDoMatias';
+  src: url('assets/fonts/Road_Rage.otf') format('opentype'); /* Troque o nome do arquivo aqui */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  // Cores fixas baseadas na nova paleta do tailwind.config
+  --background: #000000;
+  --foreground: #EEEEEE;
+  --primary: #D32F2F;
+  --card: #111111;
+  --border: #222222;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  // Garante que a fonte padrão seja a 'Inter' definida no config
+  font-family: 'Inter', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+}
+
+// Classe utilitária para títulos brutalistas
+.h-brutal {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+// Remove scrollbar feia no Windows (opcional, deixa mais clean)
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

@@ -1,0 +1,54 @@
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+  
+  <div
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.03]"
+    style="background-image: url('https://www.transparenttextures.com/patterns/dark-dotted-2.png')">
+  </div>
+  
+  <div class="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-background"></div>
+
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-neutral-500 rounded-full blur-[120px] opacity-20 animate-smoke-slow"></div>
+    
+    <div class="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-zinc-600 rounded-full blur-[150px] opacity-10 animate-smoke-drift"></div>
+    
+    <div class="absolute bottom-1/4 left-1/3 w-[700px] h-[700px] bg-gray-600 rounded-full blur-[130px] opacity-20 animate-smoke-slow" style="animation-delay: -7s;"></div>
+  </div>
+
+  <div class="relative z-10 text-center px-4 sm:px-6 w-full max-w-5xl mt-12">
+    
+    <div class="mb-4 sm:mb-6">
+      <h1 class="font-logo text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-foreground text-shadow-glow-red tracking-tighter leading-none opacity-90 break-words">
+        dj matias
+      </h1>
+    </div>
+    
+    <h2 class="font-gothic text-xl sm:text-3xl md:text-4xl font-normal tracking-wide leading-relaxed text-foreground mt-2 max-w-[280px] sm:max-w-none mx-auto">
+      Transformando pistas em experiências do
+      <span class="text-primary text-shadow-glow-red">submundo</span>
+    </h2>
+
+    <p class="mt-6 sm:mt-8 text-xs sm:text-lg text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed px-2">
+      MEPB — Música Eletrônica Periférica Brasileira
+    </p>
+
+    <div class="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center w-full max-w-[280px] sm:max-w-none mx-auto">
+      <a
+        href="#contato"
+        class="flex sm:inline-flex w-full sm:w-auto items-center justify-center px-6 sm:px-10 py-4 rounded-full bg-primary text-primary-foreground h-brutal text-xs sm:text-sm tracking-widest hover:opacity-90 transition-opacity border border-primary/50 shadow-[0_0_15px_rgba(255,23,68,0.3)]">
+        Solicitar Booking
+      </a>
+      <a
+        href="#bio"
+        class="flex sm:inline-flex w-full sm:w-auto items-center justify-center px-6 sm:px-10 py-4 rounded-full border border-border text-foreground h-brutal text-xs sm:text-sm tracking-widest hover:bg-card transition-colors">
+        Conheça a Vibe
+      </a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-6 sm:bottom-10 inset-x-0 flex justify-center z-50 pointer-events-none">
+    <a href="#bio" class="animate-bounce opacity-50 hover:opacity-100 hover:scale-110 transition-all cursor-pointer p-4 pointer-events-auto">
+      <lucide-icon [img]="ChevronDown" class="w-8 h-8 text-primary"></lucide-icon>
+    </a>
+  </div>
+</section>

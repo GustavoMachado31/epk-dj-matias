@@ -1,0 +1,96 @@
+<section id="music" class="py-24 sm:py-32 px-6 bg-background border-t border-border">
+  <div class="max-w-5xl mx-auto">
+    
+    <div class="flex items-center gap-3 mb-4">
+      <lucide-icon [img]="DiscIcon" class="w-4 h-4 text-primary animate-[spin_4s_linear_infinite]"></lucide-icon>
+      <span class="font-heading text-xs font-bold tracking-[0.25em] uppercase text-primary">
+        Sonoridade
+      </span>
+    </div>
+
+    <h2 class="h-brutal text-4xl sm:text-5xl font-bold mb-12 text-foreground tracking-tight">
+      ASSUMA O <span class="text-primary text-shadow-glow-red">CONTROLE</span> DA PISTA
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <div class="group relative bg-card border border-border p-6 hover:border-primary/50 transition-colors duration-300 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <lucide-icon [img]="RadioIcon" class="w-4 h-4 text-primary"></lucide-icon>
+              <h3 class="font-heading text-2xl font-bold text-foreground">SOUNDCLOUD SET</h3>
+            </div>
+            <p class="text-muted-foreground font-sans text-sm">O som cru e sem cortes.</p>
+          </div>
+        </div>
+        <div class="w-full mt-4 bg-black border border-border/50 rounded-sm overflow-hidden">
+          <iframe width="100%" height="352" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2123216892&color=%23d32f2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+      </div>
+
+      <div class="group relative bg-card border border-border p-6 hover:border-primary/50 transition-colors duration-300 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <lucide-icon [img]="HeadphonesIcon" class="w-4 h-4 text-primary"></lucide-icon>
+              <h3 class="font-heading text-2xl font-bold text-foreground">SPOTIFY PLAYLIST</h3>
+            </div>
+            <p class="text-muted-foreground font-sans text-sm">Referências e tracks que toco.</p>
+          </div>
+        </div>
+        <div class="w-full mt-auto bg-black border border-border/50 rounded-sm overflow-hidden h-[352px]">
+          <iframe 
+            style="border-radius:0px" 
+            src="https://open.spotify.com/embed/playlist/5yG6K1qnz6GNbLC8jnwtBP?utm_source=generator&theme=0" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="group relative bg-card border border-border p-6 hover:border-primary/50 transition-colors duration-300 flex flex-col">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <lucide-icon [img]="YoutubeIcon" class="w-4 h-4 text-primary"></lucide-icon>
+              <h3 class="font-heading text-2xl font-bold text-foreground">YOUTUBE LIVE</h3>
+            </div>
+            <p class="text-muted-foreground font-sans text-sm">A energia da pista em vídeo.</p>
+          </div>
+        </div>
+        <div class="w-full mt-auto aspect-video relative bg-black border border-border/50 rounded-sm overflow-hidden">
+          <iframe 
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/8urts2H7S3k?si=xnYmIE3wriWBmRli&start=37" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div class="relative bg-background border border-dashed border-border p-6 flex flex-col items-center justify-center min-h-[250px] opacity-60 hover:opacity-100 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent"></div>
+        <div class="relative z-10 text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full border border-border bg-card flex items-center justify-center mb-4">
+            <lucide-icon [img]="LockIcon" class="w-5 h-5 text-muted-foreground"></lucide-icon>
+          </div>
+          <h3 class="font-heading text-2xl font-bold text-muted-foreground tracking-widest uppercase mb-1">
+            Novo Set Em Breve
+          </h3>
+          <p class="text-xs font-sans text-muted-foreground tracking-widest uppercase">
+            Gravando no Submundo...
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

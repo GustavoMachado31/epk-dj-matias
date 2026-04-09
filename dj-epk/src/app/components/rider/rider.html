@@ -1,0 +1,56 @@
+<section id="rider" class="py-24 sm:py-32 px-6 bg-background border-t border-border">
+  <div class="max-w-5xl mx-auto">
+    
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <lucide-icon [img]="SettingsIcon" class="w-4 h-4 text-primary animate-[spin_6s_linear_infinite]"></lucide-icon>
+        <span class="text-xs font-bold tracking-[0.25em] uppercase text-primary font-heading">
+          Rider Técnico
+        </span>
+      </div>
+      <h2 class="h-brutal text-4xl sm:text-5xl font-bold text-foreground tracking-tight uppercase">
+        O QUE EU <span class="text-primary text-shadow-glow-red">PRECISO</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      
+      <div *ngFor="let group of equipment" class="p-6 rounded-sm bg-card border border-border hover:border-primary/50 transition-colors group">
+        
+        <div class="flex items-center gap-3 mb-6 border-b border-border/50 pb-4">
+          <lucide-icon *ngIf="group.category === 'Estrutura'" [img]="MonitorIcon" class="w-6 h-6 text-primary"></lucide-icon>
+          <lucide-icon *ngIf="group.category === 'Som'" [img]="SpeakerIcon" class="w-6 h-6 text-primary"></lucide-icon>
+          <lucide-icon *ngIf="group.category === 'Áudio'" [img]="SettingsIcon" class="w-6 h-6 text-primary"></lucide-icon>
+          <lucide-icon *ngIf="group.category === 'Cabeamento'" [img]="CableIcon" class="w-6 h-6 text-primary"></lucide-icon>
+          
+          <h3 class="font-heading text-xl font-bold tracking-wider text-foreground uppercase group-hover:text-primary transition-colors">
+            {{ group.category }}
+          </h3>
+        </div>
+        
+        <ul class="space-y-4">
+          <li *ngFor="let item of group.items" class="flex items-start gap-3">
+            <div class="w-1.5 h-1.5 rounded-none bg-primary mt-2 shrink-0 shadow-[0_0_8px_rgba(255,23,68,0.8)]"></div>
+            <span class="text-muted-foreground font-sans leading-relaxed">{{ item }}</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="mt-8 p-8 rounded-sm bg-primary/5 border border-primary/20 hover:border-primary/40 transition-colors">
+      <div class="flex items-center gap-3 mb-6">
+        <lucide-icon [img]="AlertIcon" class="w-6 h-6 text-primary"></lucide-icon>
+        <h3 class="font-heading text-xl font-bold text-foreground uppercase tracking-wider">Observações Importantes</h3>
+      </div>
+      
+      <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-4">
+        <li *ngFor="let note of notes" class="flex items-start gap-3">
+          <div class="w-1.5 h-1.5 rounded-none bg-primary mt-2 shrink-0"></div>
+          <span class="text-muted-foreground font-sans text-sm leading-relaxed">{{ note }}</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
